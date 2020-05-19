@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #2B3946;
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+}
+
+#header {
+    background-color: #2B3946;
+    color: white;
+    font-size: 0.7em;
+    padding: 2%;
+}
+
+main header {
+    border-bottom: 4px solid#2B3946;
+}
+
+main header h2 {
+    font-size: 1.1em;
+}
+
+main header p {
+    color: #ADB3B7;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    margin: 4%;
+}
+
+hr {
+    color: #2B3946;
+}
+
+legend {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+label {
+    color: #ADB3B7;
+    margin-bottom: 10px;
+}
+
+input, select {
+    background-color: #EFF0F1;
+    border: 2px solid #EFF0F1;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #2B3946;
+    transition: border 1.5s;
+    outline: none;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#contact-information label,
+#contact-information input,
+#contact-information select {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+#contact-information #zip-code {
+    max-width: 200px;
+}
+
+#newsletter {
+    text-align: left;
+    font-size: 0.9em;
+}
+
+#newsletter input[type="checkbox"], 
+#newsletter input[type="radio"] {
+    margin-right: 15px;
+}
+
+textarea {
+    background-color: #EFF0F1;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #00BEB6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: right;
+}
+
+footer {
+    background-color: #2B3946;
+    font-size: 0.8em;
+    color: #ADB3B7;
+    font-style: italic;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contact-information div {
+        display: flex;
+    }
+    #contact-information label,
+    #contact-information  input{
+        width: auto;
+    }
+    #contact-information label{
+        min-width: 200px;
+        }
+    #contact-information  input{
+    flex-grow: 1;
+    }
+}
